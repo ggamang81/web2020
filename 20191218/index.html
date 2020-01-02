@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>layout</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+	<style>
+		*{margin: 0;padding: 0;}
+		a:link{text-decoration: none; color: black;
+		  font-weight: bold;}
+		li{list-style: none;}
+		body{ margin: 0 auto; }
+		#header{width: 1000px; margin: 0 auto; padding-top: 20px;}
+		h1{ width: 100%;
+			text-align: center;
+			margin-bottom: 20px;
+			font-style: italic;
+			}
+		body{background-image: url(../images/img02.jpg);
+			background-size:500px;}
+		
+
+		#header>nav.gnb{width: 100%; margin: 0 auto;}
+
+		#header>nav.gnb>ul:after{
+				content: ""; display: block; clear: both;
+			}
+
+
+		#header>nav.gnb>ul>li{
+			float: left;
+			width: 166.67px;		
+			background-color: beige;
+			display: block;
+			margin-bottom: 20px;
+			}
+
+		#header>nav.gnb>ul>li>a{
+			
+			text-align: center;
+			font-color: #000;
+			display: block;
+			line-height: 40px;	
+		}
+		#header>nav.gnb>ul>li:hover{background-color: gray;}
+		#header>nav.gnb>ul>li>a:hover{color:white; font-weight: bold;}
+
+		element.style {
+		    width: 100%;
+		    overflow: hidden;
+		    position: relative;
+		    
+		}
+
+		.slider{width: 100%;height:auto;
+			    overflow: hidden;
+				margin:0 auto;
+
+		}
+
+        .slider img{max-width:100%; height: 350px; height: auto; background-color: #fff;}
+
+		
+		h2{ width: 100%;
+			text-align: center;
+			font-size: 30px;
+		}
+		.container>ul{width: 1000px; height: 300px; margin: 0 auto; display:block; padding:20px 0;
+			}
+		.comtainer>ul:arter{content: ""; display: block; clear: both;}
+		.container>ul>li{
+			float: left;
+			width: 242.5px;
+			margin-right:10px;
+			height: 300px;
+
+		}
+		.container>ul>li:last-child{
+			margin-right: 0px;
+		}
+		.container>ul>li>img{
+			width: 100%; height: 100%; display: block;
+		}
+				
+		div#footer{height: 100px; background-color: #444;}
+
+		
+        
+
+		.pink{background-color: pink; height: 180px;
+			padding-top: 30px;}
+
+		.white>ul>li{background-color: white;
+			height: 200px; padding-top: 20px;
+		}
+
+		.white>h2{padding-top: 50px; padding-bottom: 30px; }
+
+
+	</style>
+	<script>
+		$(document).ready(function(){
+			$(".slider").bxSlider();
+		});
+	</script>
+</head>
+<body>
+	<div id="header">
+		<h1>icecream</h1>
+		<nav class="gnb">
+			<ul>
+				<li><a href="#">menu</a></li>
+				<li><a href="#">store</a></li>
+				<li><a href="#">join</a></li>
+				<li><a href="#">login</a></li>
+				<li><a href="#">review</a></li>
+				<li><a href="#">notice</a></li>
+
+			</ul>
+		</nav>
+	</div>
+	<div class="visual">
+		<div class="slider">
+			<div>
+				<img src="../images/cake (1).jpg" alt="">
+			</div>
+			<div>
+				<img src="../images/cake (2).jpg" alt="">
+			</div>
+			<div>
+				<img src="../images/cake (3).jpg" alt="">
+			</div>
+		</div>
+
+	</div>
+		
+	<div class="container pic">
+		<h2>new</h2>
+		<ul>
+			<li><img src="../images/img03 (1).jpg" alt=""><span></span></li>
+			<li><img src="../images/img03 (2).jpg" alt=""><span></span></li>
+			<li><img src="../images/img03 (3).jpg" alt=""></li>
+			<li><img src="../images/img03 (4).jpg" alt=""></li>
+		</ul>
+	</div>
+	<div class="conwrap pink">
+		<div class="container">
+			<h2>report</h2>
+			<ul>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi temporibus voluptas, facere dignissimos numquam reiciendis nulla! Ad earum magnam dolor velit id, quidem, maiores architecto, consequatur quas cum suscipit aut. Nesciunt quidem dignissimos ipsum quos facilis consequatur vel, commodi nemo similique doloribus recusandae debitis et ab nulla praesentium molestiae cupiditate!
+				</p>
+			</ul>
+		</div>
+	</div>
+	<div class="container white">
+			<h2>notice</h2>
+			<ul>
+				<li><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, ipsum voluptatibus alias sint numquam harum cupiditate, illum minus soluta, rem minima nesciunt expedita maxime nobis corporis nulla dolore culpa earum!</p></li>
+				<li><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, ipsum voluptatibus alias sint numquam harum cupiditate, illum minus soluta, rem minima nesciunt expedita maxime nobis corporis nulla dolore culpa earum!</p></li>
+				<li><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, ipsum voluptatibus alias sint numquam harum cupiditate, illum minus soluta, rem minima nesciunt expedita maxime nobis corporis nulla dolore culpa earum!</p></li>
+				<li><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, ipsum voluptatibus alias sint numquam harum cupiditate, illum minus soluta, rem minima nesciunt expedita maxime nobis corporis nulla dolore culpa earum!</p></li>
+			</ul>
+		</div>
+	
+	<div id="footer"></div>
+</body>
+</html>

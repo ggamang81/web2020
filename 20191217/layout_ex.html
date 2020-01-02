@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>layout</title>
+    <style>
+        *{padding: 0; margin: 0;}
+        body{background-color: #ecefec;}
+        .wrap{
+           padding: 20px;
+            
+        }
+        div.wrap>div.section{
+            width: 1200px;
+            margin: 0 auto;
+            
+            
+        
+        }
+        div.wrap>div.section>div{
+            width: 292.5px;
+            float:left;
+            margin-right:10px;
+        }
+        
+        div.wrap> div.section > div:last-child{
+            margin-right:0px;
+        }
+        div.wrap>div.section img{
+            width: 100%;
+            display: block;
+        }
+        
+        div.section:after{
+            display: block; clear: both; content: "";
+        }
+        
+        h3{text-align: center;
+            margin-bottom: 10px;
+        font-size: 30px;}
+        
+        
+        .content1{   
+            background-color: #fff;}
+    
+    
+    
+    
+    
+    
+    </style>
+</head>
+
+<body>
+<div class="wrap content1">
+   <h3>gallery</h3>
+    <div class="section">
+        <div><img src="../images/testimg.jpg" alt=""></div>
+        <div><img src="../images/testimg.jpg" alt=""></div>
+        <div><img src="../images/testimg.jpg" alt=""></div>
+        <div><img src="../images/testimg.jpg" alt=""></div>
+       
+    </div>
+    
+    
+    
+</div>
+ 
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>sprite</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<style>
+		div.menu{width: 980px; height: 50px;margin:0 auto; }
+		div.menu>ul{}
+		div.menu>ul>li{float: left; background-image: url(../images/sprites.png);
+			transition: 0.2s}
+		div.menu>ul>li>a{display: block; text-indent: -9999px; line-height: 50px;
+		}
+		div.menu>ul>li:nth-child(1){width: 140px; height: 50px;background-position: 0 0;}
+		div.menu>ul>li:nth-child(2){width: 140px; height: 50px;background-position: -140px 0;}
+		div.menu>ul>li:nth-child(3){width: 140px; height: 50px;background-position: -280px 0;}
+		div.menu>ul>li:nth-child(4){width: 140px; height: 50px;background-position: -420px 0;}
+		div.menu>ul>li:nth-child(5){width: 140px; height: 50px;background-position: -560px 0;}
+		div.menu>ul>li:nth-child(6){width: 140px; height: 50px;background-position: -700px 0;}
+		div.menu>ul>li:nth-child(7){width: 140px; height: 50px;background-position: -840px 0;}
+		div.menu>ul>li:nth-child(1):hover{background-position:  0 -50px;}
+        div.menu>ul>li:nth-child(2):hover{background-position: -140px -50px;}
+        div.menu>ul>li:nth-child(3):hover{background-position: -280px -50px;}
+        div.menu>ul>li:nth-child(4):hover{background-position: -420px -50px;}
+        div.menu>ul>li:nth-child(5):hover{background-position: -560px -50px;}
+        div.menu>ul>li:nth-child(6):hover{background-position: -700px -50px;}
+        div.menu>ul>li:nth-child(7):hover{background-position: -840px -50px;}
+
+        div.menu>ul>li:nth-child(1).active{background-position:  0 -50px;}
+        div.menu>ul>li:nth-child(2).active{background-position: -140px -50px;}
+        div.menu>ul>li:nth-child(3).active{background-position: -280px -50px;}
+        div.menu>ul>li:nth-child(4).active{background-position: -420px -50px;}
+        div.menu>ul>li:nth-child(5).active{background-position: -560px -50px;}
+        div.menu>ul>li:nth-child(6).active{background-position: -700px -50px;}
+        div.menu>ul>li:nth-child(7).active{background-position: -840px -50px;}
+
+
+
+	</style>
+</head>
+<body>
+	<div class="menu">
+		<ul>
+			<li><a href="#">지역</a></li>
+			<li><a href="#">쇼핑</a></li>
+			<li><a href="#">문화</a></li>
+			<li><a href="#">여행</a></li>
+			<li><a href="#">레저</a></li>
+			<li><a href="#">추천</a></li>
+			<li class="active"><a href="#">전체보기</a></li>
+		</ul>
+
+
+	</div>
+	
+</body>
+</html>

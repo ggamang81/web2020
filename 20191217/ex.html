@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+    <meta charset="UTF-8">
+    <title>float</title>
+    <style>
+        div.wrap{
+            width: 300px;
+            background-color: antiquewhite;
+        }
+        div.left,div.right{
+            width: 135px;height: 300px;
+            background-color: aqua;
+            float: left;
+            margin-left: 10px;
+        }
+        div.left{
+            
+            background-color: palegreen;
+           
+        }
+        div.wrap:after{
+            content: "float clear";
+            display:block; clear:left;
+        }
+            
+    
+    
+    
+    
+    </style>
+</head>
+<body>
+   <div class="wrap">
+       <div class="left">
+           view01
+       </div>
+       <div class="right">
+           view02
+       </div>
+   </div>
+    <div class="visual">Lorem ipsum dolor sit amet.</div>
+</body>
+</html>
