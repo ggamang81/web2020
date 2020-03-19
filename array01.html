@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>배열</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<script src="../js/jquery-3.1.1.min.js"></script>
+	<script>
+
+		var han = ["car1","car2","car3"];
+		var text = ""; 
+		$(function(){
+			for(var i=0;i<han.length;i++){
+				// text+=han[1];
+				text += "<li>" + han[i]+"</li>";
+			}
+			console.log(text);
+			$(".han").append(text);	
+		});
+	
+	</script>
+</head>
+<body>
+	<div class="wrap">
+		<div class="han">
+			
+		</div>
+	</div>
+</body>
+</html>

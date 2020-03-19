@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<script src="../js/jquery-3.1.1.min.js"></script>
+	<script src="../js/jquery.mousewheel.min.js"></script>
+	<script>
+		$(function(){
+			// $(window).scroll(function(){
+			// 	var winTop = $(window).scrollTop();
+				
+			// 	if(winTop>100){
+			// 		$(".menu").addClass("fixed");
+
+			// 	}else{
+			// 		$(".menu").removeClass("fixed");
+			// 	}
+			// });
+
+			$(document).mousewheel(function(e,delta){
+				console.log(delta);
+				$(window).scroll(function(){
+					var winTop=$(this).scrollTop();
+					if(winTop>100){
+						if(delta>0){
+							$(".menu").addClass("fixed");
+						}else{
+							$(".menu").removeClass("fixed");
+						}// }delta
+					}else{
+						$(".menu").removeClass("fixed");
+					}// }WinTop
+				});
+			});
+		});
+	</script>
+	<style>
+		nav.menu{background-color: #cdcdcd;width: 100%;transition: .3s}
+		nav.menu.fixed{position: fixed;top:0;background-color:#000;}
+		nav.menu.fixed a{color: white;}
+		nav.menu ul li{float:left;width: 20%;}
+		nav.menu ul li a{display: block;text-align: center;line-height: 40px;}
+		.contents{height: 3000px;}
+
+	</style>
+</head>
+<body>
+	<div class="Wrap">
+		<nav class="menu">
+			<ul class="clearfix">
+				<li><a href="#">menu1</a></li>
+				<li><a href="#">menu2</a></li>
+				<li><a href="#">menu3</a></li>
+				<li><a href="#">menu4</a></li>
+				<li><a href="#">menu5</a></li>
+			</ul>
+		</nav>
+		<div class="contents">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quod sapiente temporibus, vitae minima consequuntur delectus voluptates amet neque suscipit cum reiciendis, sed tempora. Officia voluptatibus recusandae odio perspiciatis nobis, nulla eligendi laboriosam, sint atque itaque error non voluptate quas alias, fugiat nisi quidem provident consequatur laborum vel deserunt dolor vitae? Accusamus voluptate, inventore nisi optio aliquid et. Nisi maiores, nemo quaerat, laboriosam eius aperiam atque porro blanditiis earum facilis autem quod aliquid, molestias nobis, minima ducimus cum. Nihil hic dolorem, dignissimos debitis consequatur consectetur quia, vero perspiciatis! Illum sequi, explicabo, minima deleniti voluptatum a rerum suscipit. Porro, soluta sequi.</div>
+	</div>
+	
+</body>
+</html>
